@@ -246,46 +246,53 @@ export default function App() {
       <div style={{ backgroundColor: "#04AA6D", justifyContent: "flex-start" }}> Welcome to My Net-Works </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div style={{ display: "flex", justifyContent: "flex-start" }}>
-          <FormControl variant="outlined" className={classes.formControl}>
-            <InputLabel id="demo-simple-select-outlined-label">
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="demo-simple-select-outlined-label">
               Building
           </InputLabel>
-            <Select
-              labelId="demo-simple-select-outlined-label"
-              id="demo-simple-select-outlined"
-              value={building}
-              onChange={handleChange}
-              label="Building"
-            >
-              {buildings.map(val => {
-                return (
-                  <MenuItem key={val.value} value={val.value}>
-                    {val.label}
-                  </MenuItem>
-                );
-              })}
-            </Select>
-          </FormControl>
-          <FormControl variant="outlined" className={classes.formControl}>
-            <InputLabel id="demo-simple-select-outlined-label">
-              Covid Impact
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                value={building}
+                onChange={handleChange}
+                label="Building"
+              >
+                {buildings.map(val => {
+                  return (
+                    <MenuItem key={val.value} value={val.value}>
+                      {val.label}
+                    </MenuItem>
+                  );
+                })}
+              </Select>
+            </FormControl>
+            {/* next filter */}
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="demo-simple-select-outlined-label">
+                Covid Impact
           </InputLabel>
-            <Select
-              labelId="demo-simple-select-outlined-label"
-              id="demo-simple-select-outlined"
-              value={impactInd}
-              onChange={handleImpactChange}
-              label="Building"
-            >
-              {indicators.map(val => {
-                return (
-                  <MenuItem key={val.value} value={val.value}>
-                    {val.label}
-                  </MenuItem>
-                );
-              })}
-            </Select>
-          </FormControl>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                value={impactInd}
+                onChange={handleImpactChange}
+                label="Building"
+              >
+                {indicators.map(val => {
+                  return (
+                    <MenuItem key={val.value} value={val.value}>
+                      {val.label}
+                    </MenuItem>
+                  );
+                })}
+              </Select>
+            </FormControl>
+            <div className="App">
+              <Connections />
+            </div>
+            <Legends />
+          </div>
           <div ref={divRef} style={{ marginLeft: 120 }}>
             <Popover
               id="mouse-over-popover"
@@ -352,7 +359,7 @@ export default function App() {
               ) : null}
             </Popover>
           </div>
-          <Legends />
+
         </div>
         {reset ? (
           <div>Resetting</div>
@@ -381,9 +388,7 @@ export default function App() {
         ) : null}
         <div style={{ borderLeft: "green", height: "500px" }}>
         </div>
-        <div className="App">
-          <Connections />
-        </div>
+
       </div>
     </React.Fragment>
   );
