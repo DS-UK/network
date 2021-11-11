@@ -240,7 +240,7 @@ export default function App() {
     <React.Fragment>
       <div style={{ display: "flex", backgroundColor: "#04AA6D", justifyContent: "center", fontSize: "50px" }}> Welcome to My Net-Works </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
-        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+        <div style={{ display: "flex", justifyContent: "flex-start", width: "300px" }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <FormControl variant="outlined" className={classes.formControl}>
               <InputLabel id="demo-simple-select-outlined-label">
@@ -288,7 +288,7 @@ export default function App() {
             </div>
             <Legends />
           </div>
-          <div ref={divRef} style={{ }}>
+          <div ref={divRef} style={{}}>
             <Popover
               id="mouse-over-popover"
               open={open}
@@ -386,7 +386,8 @@ export default function App() {
             // onNodePositionChange={onNodePositionChange}
             />
           ) : (
-              <div>No Data found for selected Criteria</div>
+              <div style={{ display: "flex", fontSize: "30px", alignItems: "center" }}>
+                No Data found for selected Criteria</div>
             )
         ) : null}
       </div>
