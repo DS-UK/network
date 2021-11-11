@@ -27,9 +27,9 @@ export default function Sample() {
         width: 800,
         d3: {
             alphaTarget: 0.05,
-            gravity: -250,
-            linkLength: 120,
+            linkLength: 150,
             linkStrength: 2,
+            gravity: -100,
         },
         node: {
             color: "#d3d3d3",
