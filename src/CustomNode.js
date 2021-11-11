@@ -85,7 +85,7 @@ function CustomNode(props) {
           <div>
             <Typography component="label" variant="subtitle2">Covid Impact Indicator:</Typography>
             <Typography component="span" variant="subtitle1">
-              {person.covidImpactIndicator}
+              {person.isOnLine}
             </Typography>
           </div>
         </div>

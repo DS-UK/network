@@ -5,8 +5,8 @@
       "id": 1,
       "employeeName": "Kutti",
       "seatNo": 1,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -14,8 +14,8 @@
       "id": 2,
       "employeeName": "Krishna",
       "seatNo": 2,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -23,8 +23,8 @@
       "id": 3,
       "employeeName": "Vadi",
       "seatNo": 3,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -32,8 +32,8 @@
       "id": 4,
       "employeeName": "Ramaiah",
       "seatNo": 4,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -41,8 +41,8 @@
       "id": 5,
       "employeeName": "Ram",
       "seatNo": 5,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -50,8 +50,8 @@
       "id": 6,
       "employeeName": "Nishant",
       "seatNo": 6,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -59,8 +59,8 @@
       "id": 7,
       "employeeName": "Vijay",
       "seatNo": 7,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -68,8 +68,8 @@
       "id": 8,
       "employeeName": "Gnana",
       "seatNo": 8,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -77,8 +77,8 @@
       "id": 9,
       "employeeName": "Vijayan",
       "seatNo": 9,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -86,8 +86,8 @@
       "id": 10,
       "employeeName": "Raja",
       "seatNo": 10,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -95,8 +95,8 @@
       "id": 11,
       "employeeName": "Vishak",
       "seatNo": 11,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -104,8 +104,8 @@
       "id": 12,
       "employeeName": "Priya",
       "seatNo": 12,
-      "covidImpactIndicator": "N",
-      "building": "BDC-1",
+      "isOnLine": "N",
+      "tag": "BDC-1",
       "color": "#437D00"
     },
     {
@@ -113,8 +113,8 @@
       "id": 13,
       "employeeName": "Roshini",
       "seatNo": 13,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -122,8 +122,8 @@
       "id": 14,
       "employeeName": "Rama",
       "seatNo": 14,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -131,8 +131,8 @@
       "id": 15,
       "employeeName": "Rengan",
       "seatNo": 15,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -140,8 +140,8 @@
       "id": 16,
       "employeeName": "Arun",
       "seatNo": 16,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -149,8 +149,8 @@
       "id": 17,
       "employeeName": "Arjun",
       "seatNo": 17,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -158,8 +158,8 @@
       "id": 18,
       "employeeName": "Babu",
       "seatNo": 18,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -167,8 +167,8 @@
       "id": 19,
       "employeeName": "John",
       "seatNo": 19,
-      "covidImpactIndicator": "N",
-      "building": "BDC-2",
+      "isOnLine": "N",
+      "tag": "BDC-2",
       "color": "#437D00"
     },
     {
@@ -176,8 +176,8 @@
       "id": 20,
       "employeeName": "Anna",
       "seatNo": 20,
-      "covidImpactIndicator": "Q",
-      "building": "BDC-2",
+      "isOnLine": "Y",
+      "tag": "BDC-2",
       "color": "#F38E06"
     },
     {
@@ -185,8 +185,8 @@
       "id": 21,
       "employeeName": "Joe",
       "seatNo": 21,
-      "covidImpactIndicator": "I",
-      "building": "BDC-2",
+      "isOnLine": "Y",
+      "tag": "BDC-2",
       "color": "#C70039"
     },
     {
@@ -194,8 +194,8 @@
       "id": 22,
       "employeeName": "Sara",
       "seatNo": 22,
-      "covidImpactIndicator": "Q",
-      "building": "BDC-2",
+      "isOnLine": "Y",
+      "tag": "BDC-2",
       "color": "#F38E06"
     },
     {
@@ -203,8 +203,8 @@
       "id": 23,
       "employeeName": "Kathir",
       "seatNo": 23,
-      "covidImpactIndicator": "Q",
-      "building": "BDC-2",
+      "isOnLine": "Y",
+      "tag": "BDC-2",
       "color": "#F38E06"
     },
     {
@@ -212,8 +212,8 @@
       "id": 24,
       "employeeName": "Tim",
       "seatNo": 24,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -221,8 +221,8 @@
       "id": 25,
       "employeeName": "Francis",
       "seatNo": 25,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -230,8 +230,8 @@
       "id": 26,
       "employeeName": "Mark",
       "seatNo": 26,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -239,8 +239,8 @@
       "id": 27,
       "employeeName": "Frank",
       "seatNo": 27,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -248,8 +248,8 @@
       "id": 28,
       "employeeName": "Scott",
       "seatNo": 28,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -257,8 +257,8 @@
       "id": 29,
       "employeeName": "Suresh",
       "seatNo": 29,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -266,8 +266,8 @@
       "id": 30,
       "employeeName": "Srini",
       "seatNo": 30,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -275,8 +275,8 @@
       "id": 31,
       "employeeName": "Alexis",
       "seatNo": 31,
-      "covidImpactIndicator": "N",
-      "building": "DLF-1",
+      "isOnLine": "N",
+      "tag": "DLF-1",
       "color": "#437D00"
     },
     {
@@ -284,8 +284,8 @@
       "id": 32,
       "employeeName": "Liam",
       "seatNo": 32,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -293,8 +293,8 @@
       "id": 33,
       "employeeName": "Emma",
       "seatNo": 33,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -302,8 +302,8 @@
       "id": 34,
       "employeeName": "Noah",
       "seatNo": 34,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -311,8 +311,8 @@
       "id": 35,
       "employeeName": "olivia",
       "seatNo": 35,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -320,8 +320,8 @@
       "id": 36,
       "employeeName": "Ava",
       "seatNo": 36,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -329,8 +329,8 @@
       "id": 37,
       "employeeName": "oliver",
       "seatNo": 37,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -338,8 +338,8 @@
       "id": 38,
       "employeeName": "Benjamin",
       "seatNo": 38,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -347,8 +347,8 @@
       "id": 39,
       "employeeName": "Lucas",
       "seatNo": 39,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -356,8 +356,8 @@
       "id": 40,
       "employeeName": "Mason",
       "seatNo": 40,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -365,8 +365,8 @@
       "id": 41,
       "employeeName": "Logan",
       "seatNo": 41,
-      "covidImpactIndicator": "N",
-      "building": "CHN-1",
+      "isOnLine": "N",
+      "tag": "Y",
       "color": "#437D00"
     },
     {
@@ -374,8 +374,8 @@
       "id": 42,
       "employeeName": "William",
       "seatNo": 42,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -383,8 +383,8 @@
       "id": 43,
       "employeeName": "Isabella",
       "seatNo": 43,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -392,8 +392,8 @@
       "id": 44,
       "employeeName": "Sophia",
       "seatNo": 44,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -401,8 +401,8 @@
       "id": 45,
       "employeeName": "Charlotte",
       "seatNo": 45,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -410,8 +410,8 @@
       "id": 46,
       "employeeName": "Mia",
       "seatNo": 46,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -419,8 +419,8 @@
       "id": 47,
       "employeeName": "Harper",
       "seatNo": 47,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -428,8 +428,8 @@
       "id": 48,
       "employeeName": "Evelyn",
       "seatNo": 48,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -437,8 +437,8 @@
       "id": 49,
       "employeeName": "Amelia",
       "seatNo": 49,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -446,8 +446,8 @@
       "id": 50,
       "employeeName": "Brooke",
       "seatNo": 50,
-      "covidImpactIndicator": "N",
-      "building": "CLG-1",
+      "isOnLine": "N",
+      "tag": "CLG-1",
       "color": "#437D00"
     },
     {
@@ -455,8 +455,8 @@
       "id": 51,
       "employeeName": "Rachel",
       "seatNo": 51,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -464,8 +464,8 @@
       "id": 52,
       "employeeName": "Johnathan",
       "seatNo": 52,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -473,8 +473,8 @@
       "id": 53,
       "employeeName": "Nicole",
       "seatNo": 53,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -482,8 +482,8 @@
       "id": 54,
       "employeeName": "Frank",
       "seatNo": 54,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -491,8 +491,8 @@
       "id": 55,
       "employeeName": "Amanda",
       "seatNo": 55,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -500,8 +500,8 @@
       "id": 56,
       "employeeName": "Chris",
       "seatNo": 56,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -509,8 +509,8 @@
       "id": 57,
       "employeeName": "Sam",
       "seatNo": 57,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -518,8 +518,8 @@
       "id": 58,
       "employeeName": "Alex",
       "seatNo": 58,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -527,8 +527,8 @@
       "id": 59,
       "employeeName": "Remo",
       "seatNo": 59,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -536,8 +536,8 @@
       "id": 60,
       "employeeName": "Samuel",
       "seatNo": 60,
-      "covidImpactIndicator": "N",
-      "building": "TX-1",
+      "isOnLine": "N",
+      "tag": "TX-1",
       "color": "#437D00"
     },
     {
@@ -545,8 +545,8 @@
       "id": 61,
       "employeeName": "Travis",
       "seatNo": 61,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -554,8 +554,8 @@
       "id": 62,
       "employeeName": "Amy",
       "seatNo": 62,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -563,8 +563,8 @@
       "id": 63,
       "employeeName": "Shally",
       "seatNo": 63,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -572,8 +572,8 @@
       "id": 64,
       "employeeName": "Dylan",
       "seatNo": 64,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -581,8 +581,8 @@
       "id": 65,
       "employeeName": "Wyatt",
       "seatNo": 65,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -590,8 +590,8 @@
       "id": 66,
       "employeeName": "Issac",
       "seatNo": 66,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -599,8 +599,8 @@
       "id": 67,
       "employeeName": "Jack",
       "seatNo": 67,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -608,8 +608,8 @@
       "id": 68,
       "employeeName": "Carter",
       "seatNo": 68,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     },
     {
@@ -617,8 +617,8 @@
       "id": 69,
       "employeeName": "Amazon",
       "seatNo": 69,
-      "covidImpactIndicator": "N",
-      "building": "TX-2",
+      "isOnLine": "N",
+      "tag": "TX-2",
       "color": "#437D00"
     }
   ],

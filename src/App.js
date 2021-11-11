@@ -34,11 +34,11 @@ const useStyles = makeStyles(theme => ({
 console.log(inpData);
 export default function App() {
   // graph payload (with minimalist structure)
-  const [building, setBuilding] = React.useState("All");
+  const [tag, setBuilding] = React.useState("All");
   const classes = useStyles();
   const divRef = React.useRef();
   const [reset, setReset] = useState(false);
-  const [buildings, setBuildings] = React.useState([
+  const [tags, setBuildings] = React.useState([
     { label: "All", value: "All" }
   ]);
 
@@ -46,12 +46,9 @@ export default function App() {
     { label: "All", value: "All" },
     {
       value: "N",
-      label: "No Impact (N)"
+      label: "No"
     },
-    { value: "I", label: "COVID Impacted (I)" },
-    { value: "Q", label: "Quarantined / To Be Quarantined (Q)" },
-    { value: "C", label: "Monitor - Low Risk (C)" },
-    { value: "M", label: "Monitor - High Risk (M)" }
+    { value: "Y", label: "Yes" }
   ];
   const [data, setData] = useState(null);
   const [filteredData, setFilteredData] = useState(null);
@@ -83,13 +80,13 @@ export default function App() {
   useEffect(() => {
     console.log(inpData);
     const uniqueBuildings = inpData.nodes
-      .map(val => val.building)
+      .map(val => val.tag)
       .filter((value, index, self) => {
         return self.indexOf(value) === index;
       })
       .map(val => ({ label: val, value: val }));
     //   console.log(uniqueBuildings);
-    setBuildings(buildings => buildings.concat(uniqueBuildings));
+    setBuildings(tags => tags.concat(uniqueBuildings));
     setData(inpData);
     setFilteredData(inpData);
   }, []);
@@ -97,12 +94,12 @@ export default function App() {
   //useEffect to reset the graph to initial state - workaround for now
   useEffect(() => {
     if (reset) {
-      if (building === "All" && impactInd === "All") {
+      if (tag === "All" && impactInd === "All") {
         setFilteredData(data);
         setReset(false);
       } else {
         const filteredNodes = data.nodes.filter(
-          val => val.covidImpactIndicator === impactInd
+          val => val.isOnLine === impactInd
         );
         setReset(false);
         getNewData(filteredNodes);
@@ -114,22 +111,22 @@ export default function App() {
     if (data) {
       let filteredNodes;
       setFilteredData(null);
-      if (building === "All" && impactInd === "All") {
+      if (tag === "All" && impactInd === "All") {
         setReset(true);
-      } else if (building === "All" && impactInd !== "All") {
+      } else if (tag === "All" && impactInd !== "All") {
         setReset(true);
-      } else if (building !== "All" && impactInd === "All") {
-        filteredNodes = data.nodes.filter(val => val.building === building);
+      } else if (tag !== "All" && impactInd === "All") {
+        filteredNodes = data.nodes.filter(val => val.tag === tag);
         getNewData(filteredNodes);
       } else {
         filteredNodes = data.nodes.filter(
           val =>
-            val.building === building && val.covidImpactIndicator === impactInd
+            val.tag === tag && val.isOnLine === impactInd
         );
         getNewData(filteredNodes);
       }
     }
-  }, [building, impactInd]);
+  }, [tag, impactInd]);
 
   const getNewData = filteredNodes => {
     // console.log(data,filteredNodes);
@@ -140,7 +137,7 @@ export default function App() {
       }
     });
 
-    //get employees gone outside the building where target not in their building
+    //get employees gone outside the tag where target not in their tag
     filteredLinks.forEach(val => {
       if (filteredNodes.map(val => val.id).indexOf(val.target) === -1) {
         outsideBuilding.push(
@@ -249,16 +246,16 @@ export default function App() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <FormControl variant="outlined" className={classes.formControl}>
               <InputLabel id="demo-simple-select-outlined-label">
-              Building
+              Tags
           </InputLabel>
               <Select
                 labelId="demo-simple-select-outlined-label"
                 id="demo-simple-select-outlined"
-                value={building}
+                value={tag}
                 onChange={handleChange}
-                label="Building"
+                label="Tag"
               >
-                {buildings.map(val => {
+                {tags.map(val => {
                   return (
                     <MenuItem key={val.value} value={val.value}>
                       {val.label}
@@ -270,14 +267,14 @@ export default function App() {
             {/* next filter */}
             <FormControl variant="outlined" className={classes.formControl}>
               <InputLabel id="demo-simple-select-outlined-label">
-                Covid Impact
+                Online
           </InputLabel>
               <Select
                 labelId="demo-simple-select-outlined-label"
                 id="demo-simple-select-outlined"
                 value={impactInd}
                 onChange={handleImpactChange}
-                label="Building"
+                label="isOnline"
               >
                 {indicators.map(val => {
                   return (
@@ -333,18 +330,18 @@ export default function App() {
                   </div>
                   <div>
                     <Typography component="label" variant="subtitle2">
-                      Seat Number:
+                      Count:
                   </Typography>
                     <Typography component="span" variant="subtitle1">
-                      {person.seatNo}
+                      {person.count}
                     </Typography>
                   </div>
                   <div>
                     <Typography component="label" variant="subtitle2">
-                      Building:
+                      Tags:
                   </Typography>
                     <Typography component="span" variant="subtitle1">
-                      {person.building}
+                      {person.tag}
                     </Typography>
                   </div>
                   <div>
@@ -352,7 +349,7 @@ export default function App() {
                       Covid Impact Indicator:
                   </Typography>
                     <Typography component="span" variant="subtitle1">
-                      {person.covidImpactIndicator}
+                      {person.isOnLine}
                     </Typography>
                   </div>
                 </div>
