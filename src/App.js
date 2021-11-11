@@ -2,7 +2,7 @@ import React from 'react';
 import { Graph } from 'react-d3-graph';
 import "./styles.css";
 import CustomNode from "./data/custom-node/CustomNode";
-import "./App.css";
+import "./Connections.css";
 import { Connections } from "./Connections";
 
 export default function Sample() {
@@ -253,6 +253,8 @@ export default function Sample() {
             data={data}
             config={config}
           />
+        </div>
+        <div class="divide">
         </div>
         <div className="App">
           <Connections />

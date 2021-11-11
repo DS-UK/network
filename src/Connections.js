@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Connections.css";
 import { ConnectionData } from "./data";
 
 export const Connections = () => {
