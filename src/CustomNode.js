@@ -77,9 +77,9 @@ function CustomNode(props) {
             </Typography>
           </div>
           <div>
-            <Typography component="label" variant="subtitle2">Building:</Typography>
+            <Typography component="label" variant="subtitle2">Tag:</Typography>
             <Typography component="span" variant="subtitle1">
-              {person.building}
+              {person.tag}
             </Typography>
           </div>
           <div>

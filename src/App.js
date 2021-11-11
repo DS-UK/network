@@ -5,12 +5,10 @@ import inpData from "./data.json";
 import CustomNode from "./CustomNode";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
-import * as d3 from "d3";
 import Legends from "./Legends";
 import "./Connections.css";
 import { Connections } from "./Connections";
@@ -34,11 +32,11 @@ const useStyles = makeStyles(theme => ({
 console.log(inpData);
 export default function App() {
   // graph payload (with minimalist structure)
-  const [tag, setBuilding] = React.useState("All");
+  const [tag, setTag] = React.useState("All");
   const classes = useStyles();
   const divRef = React.useRef();
   const [reset, setReset] = useState(false);
-  const [tags, setBuildings] = React.useState([
+  const [tags, setTags] = React.useState([
     { label: "All", value: "All" }
   ]);
 
@@ -70,7 +68,7 @@ export default function App() {
   };
 
   const handleChange = event => {
-    setBuilding(event.target.value);
+    setTag(event.target.value);
   };
 
   const handleImpactChange = event => {
@@ -79,14 +77,14 @@ export default function App() {
 
   useEffect(() => {
     console.log(inpData);
-    const uniqueBuildings = inpData.nodes
+    const uniqueTags = inpData.nodes
       .map(val => val.tag)
       .filter((value, index, self) => {
         return self.indexOf(value) === index;
       })
       .map(val => ({ label: val, value: val }));
-    //   console.log(uniqueBuildings);
-    setBuildings(tags => tags.concat(uniqueBuildings));
+    // console.log(uniqueTags);
+    setTags(tags => tags.concat(uniqueTags));
     setData(inpData);
     setFilteredData(inpData);
   }, []);
@@ -130,7 +128,7 @@ export default function App() {
 
   const getNewData = filteredNodes => {
     // console.log(data,filteredNodes);
-    let outsideBuilding = [];
+    let outsideTag = [];
     const filteredLinks = data.links.filter(val => {
       if (filteredNodes.map(val => val.id).indexOf(val.source) !== -1) {
         return true;
@@ -140,13 +138,13 @@ export default function App() {
     //get employees gone outside the tag where target not in their tag
     filteredLinks.forEach(val => {
       if (filteredNodes.map(val => val.id).indexOf(val.target) === -1) {
-        outsideBuilding.push(
+        outsideTag.push(
           data.nodes.filter(innerval => innerval.id === val.target)[0]
         );
       }
     });
-    console.log(outsideBuilding);
-    const newFilteredNodes = filteredNodes.concat(outsideBuilding);
+    console.log(outsideTag);
+    const newFilteredNodes = filteredNodes.concat(outsideTag);
     //console.log(filteredLinks);
     const newData = { nodes: newFilteredNodes, links: filteredLinks };
     setFilteredData(newData);
@@ -246,7 +244,7 @@ export default function App() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <FormControl variant="outlined" className={classes.formControl}>
               <InputLabel id="demo-simple-select-outlined-label">
-              Tags
+                Tag
           </InputLabel>
               <Select
                 labelId="demo-simple-select-outlined-label"
@@ -274,7 +272,7 @@ export default function App() {
                 id="demo-simple-select-outlined"
                 value={impactInd}
                 onChange={handleImpactChange}
-                label="isOnline"
+                label="Tag"
               >
                 {indicators.map(val => {
                   return (
@@ -338,7 +336,7 @@ export default function App() {
                   </div>
                   <div>
                     <Typography component="label" variant="subtitle2">
-                      Tags:
+                      Tag:
                   </Typography>
                     <Typography component="span" variant="subtitle1">
                       {person.tag}
@@ -346,7 +344,7 @@ export default function App() {
                   </div>
                   <div>
                     <Typography component="label" variant="subtitle2">
-                      Covid Impact Indicator:
+                      Is Online:
                   </Typography>
                     <Typography component="span" variant="subtitle1">
                       {person.isOnLine}
