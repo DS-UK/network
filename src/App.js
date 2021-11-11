@@ -238,7 +238,7 @@ export default function App() {
   console.log(indicators, impactInd, filteredData, graphRef);
   return (
     <React.Fragment>
-      <div style={{ backgroundColor: "#04AA6D", justifyContent: "flex-start" }}> Welcome to My Net-Works </div>
+      <div style={{ display: "flex", backgroundColor: "#04AA6D", justifyContent: "center", fontSize: "50px" }}> Welcome to My Net-Works </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div style={{ display: "flex", justifyContent: "flex-start" }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -288,7 +288,7 @@ export default function App() {
             </div>
             <Legends />
           </div>
-          <div ref={divRef} style={{ marginLeft: 120 }}>
+          <div ref={divRef} style={{ }}>
             <Popover
               id="mouse-over-popover"
               open={open}
@@ -324,6 +324,14 @@ export default function App() {
                   </Typography>
                     <Typography component="span" variant="subtitle1">
                       {person.employeeName}
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography component="label" variant="subtitle2">
+                      Gender:
+                  </Typography>
+                    <Typography component="span" variant="subtitle1">
+                      {person.gender}
                     </Typography>
                   </div>
                   <div>
@@ -381,9 +389,6 @@ export default function App() {
               <div>No Data found for selected Criteria</div>
             )
         ) : null}
-        <div style={{ borderLeft: "green", height: "500px" }}>
-        </div>
-
       </div>
     </React.Fragment>
   );
