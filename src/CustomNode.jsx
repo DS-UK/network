@@ -3,7 +3,7 @@ import React from "react";
 
 import "./res/styles/custom-node.css";
 
-const ICON_PATH = "./custom-node/res/images/";
+const ICON_PATH = "./data/custom-node/res/images/";
 
 const ICON_TYPES = {
   MAN: ICON_PATH + "man.svg",
