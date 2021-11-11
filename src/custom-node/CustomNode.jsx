@@ -8,8 +8,9 @@ const ICON_PATH = "./data/custom-node/res/images/";
 const ICON_TYPES = {
   MAN: ICON_PATH + "man.svg",
   WOMAN: ICON_PATH + "girl.svg",
-  CAR: ICON_PATH + "bike.svg",
+  CAR: ICON_PATH + "car.svg",
   BIKE: ICON_PATH + "bike.svg",
+  TICK: ICON_PATH + "tick.svg",
 };
 
 /**
@@ -30,8 +31,7 @@ function CustomNode({ person }) {
         </div>
 
         <div className="icon-bar">
-          {person.hasBike && <div className="icon" style={{ backgroundImage: `url('${ICON_TYPES.BIKE}')` }} />}
-          {person.hasCar && <div className="icon" style={{ backgroundImage: `url('${ICON_TYPES.CAR}')` }} />}
+          {person.available && <div className="icon" style={{ backgroundImage: `url('${ICON_TYPES.TICK}')` }} />}
         </div>
       </div>
     </div>

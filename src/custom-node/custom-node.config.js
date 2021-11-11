@@ -2,8 +2,8 @@ import React from "react";
 import CustomNode from "./CustomNode";
 
 export default {
-  automaticRearrangeAfterDropNode: false,
-  collapsible: false,
+  automaticRearrangeAfterDropNode: true,
+  collapsible: true,
   height: 400,
   highlightDegree: 1,
   highlightOpacity: 0.2,
@@ -30,7 +30,7 @@ export default {
     opacity: 1,
     renderLabel: true,
     size: {
-      width: 700,
+      width: 900,
       height: 900,
     },
     strokeColor: "none",
