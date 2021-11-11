@@ -9,7 +9,8 @@
 }
 .content {
    display: flex;
-   flex-direction: row
+   flex-direction: row;
+   height: 500px;
 }
 .divide {
     border-left: 6px solid green;

@@ -22,12 +22,12 @@ export default function Sample() {
     staticGraph: false,
     // width: window.innerWidth,
     automaticRearrangeAfterDropNode: false,
-    height: 400,
+    height: 600,
     maxZoom: 8,
     minZoom: 0.1,
     nodeHighlightBehavior: true,
     panAndZoom: false,
-    width: 800,
+    width: 900,
     d3: {
       alphaTarget: 0.05,
       linkLength: 150,
@@ -248,6 +248,7 @@ export default function Sample() {
       <div class="topnav"> Welcome to My Net-Works </div>
       <div id="row" class="content">
         <div >
+          
           <Graph
             id="test"
             data={data}
