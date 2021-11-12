@@ -155,6 +155,7 @@ export default function App() {
   // the graph configuration, you only need to pass down properties
   // that you want to override, otherwise default ones will be used
   const myConfig = {
+    collapsible: true,
     nodeHighlightBehavior: true,
     height: 700,
     width: 1200,
