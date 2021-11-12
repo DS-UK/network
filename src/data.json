@@ -823,7 +823,7 @@
       "target": 5,
       "distance": 0,
       "message": "Hackathon",
-      "color": "#f7e8be"
+      "color": "DodgerBlue"
     },
     {
       "_id": "5ea7976696d7256d702a8a55",
@@ -831,7 +831,7 @@
       "target": 4,
       "distance": 0,
       "message": "Hackathon",
-      "color": "#f7e8be"
+      "color": "DodgerBlue"
     },
     {
       "_id": "5ea7976696d7256d702a8a56",
@@ -982,16 +982,16 @@
       "source": 10,
       "target": 25,
       "distance": 0,
-      "message": "Hackathon",
-      "color": "DodgerBlue"
+      "message": "project team",
+      "color": "pink"
     },
     {
       "_id": "5ea7976996d7256d702a8a69",
       "source": 25,
       "target": 10,
       "distance": 0,
-      "message": "Hackathon",
-      "color": "DodgerBlue"
+      "message": "project team",
+      "color": "pink"
     },
     {
       "_id": "5ea7976996d7256d702a8a6a",

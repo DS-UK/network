@@ -5,19 +5,29 @@ export const ConnectionData = [
     Count: "Count"
   },
   {
-    Name: "Astha",
-    PSID: "44133487",
-    Count: "2"
+    Name: "Luke",
+    PSID: "43622339",
+    Count: "76"
   },
   {
     Name: "Flora",
-    PSID: "44112233",
-    Count: "1",
+    PSID: "43733408",
+    Count: "66",
   },
   {
-    Name: "Luke",
-    PSID: "123456",
-    Count: "6"
+    Name: "Anindya",
+    PSID: "44013721",
+    Count: "64",
+  },
+  {
+    Name: "Gil",
+    PSID: "43158496",
+    Count: "58",
+  },
+  {
+    Name: "Astha",
+    PSID: "44133487",
+    Count: "33"
   },
  
 ];
